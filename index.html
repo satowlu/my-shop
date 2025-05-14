@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digitaler Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff69b4;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #e0ffe0;
+      text-align: center;
+      padding: 0.5em;
+    }
+
+    nav a {
+      margin: 0 1em;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      padding: 2em;
+    }
+
+    .product {
+      border: 2px solid #ff69b4;
+      padding: 1em;
+      border-radius: 10px;
+      background-color: #fff0f5;
+      text-align: center;
+    }
+
+    .product h3 {
+      margin-top: 0;
+    }
+
+    .btn {
+      background-color: #32cd32;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #28a428;
+    }
+
+    .form-section, .social-section {
+      padding: 2em;
+      background-color: #f0fff0;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    .social-icons a {
+      margin: 0 0.5em;
+      color: #ff69b4;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #32cd32;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Willkommen in unserem digitalen Shop!</h1>
+  </header>
+
+  <nav>
+    <a href="#produkte">Produkte</a>
+    <a href="#kontakt">Anfragen</a>
+    <a href="#socials">Social Media</a>
+  </nav>
+
+  <section id="produkte" class="products">
+    <div class="product">
+      <h3>PDF: Lernhilfe</h3>
+      <p>Ein hilfreiches PDF zum Lernen</p>
+      <button class="btn">Jetzt kaufen</button>
+    </div>
+    <div class="product">
+      <h3>Video: Tutorial</h3>
+      <p>Ein exklusives Lernvideo</p>
+      <button class="btn">Jetzt kaufen</button>
+    </div>
+    <div class="product">
+      <h3>Bundle: PDF + Video</h3>
+      <p>Spare beim Kombi-Paket!</p>
+      <button class="btn">Jetzt kaufen</button>
+    </div>
+  </section>
+
+  <section id="kontakt" class="form-section">
+    <h2 style="text-align:center;">Kontakt / Anfrage</h2>
+    <form onsubmit="event.preventDefault(); alert('Danke für deine Anfrage!');">
+      <input type="text" placeholder="Dein Name" required />
+      <input type="email" placeholder="Deine E-Mail" required />
+      <textarea placeholder="Deine Nachricht" rows="5" required></textarea>
+      <button type="submit" class="btn">Senden</button>
+    </form>
+  </section>
+
+  <section id="socials" class="social-section">
+    <h2 style="text-align:center;">Folge uns</h2>
+    <div class="social-icons" style="text-align:center;">
+      <a href="https://instagram.com" target="_blank">📸</a>
+      <a href="https://youtube.com" target="_blank">🎥</a>
+      <a href="https://tiktok.com" target="_blank">🎵</a>
+      <a href="https://twitter.com" target="_blank">🐦</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Dein Shop. Alle Rechte vorbehalten.
+  </footer>
+
+</body>
+</html>
